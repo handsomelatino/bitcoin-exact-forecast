@@ -1,0 +1,48 @@
+.__twitter-share {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+
+    .bubble {
+      background-color: #5a5a5a;
+    }
+
+    .arrow {
+      border-left-color: #5a5a5a;
+    }
+
+    > svg {
+      // transform: scale(1.1);
+    }
+  }
+
+  .bubble {
+    background-color: #3F3F3F;
+    border-radius: 8px;
+    padding: 8px;
+    width: 72px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .arrow {
+    border: 6px solid transparent;
+    border-left-width: 10px;
+    border-left-color: #3F3F3F;
+    margin-right: 8px;
+    transition: 0.3s;
+  }
+  
+  > svg {
+    fill: white;
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+  }
+}

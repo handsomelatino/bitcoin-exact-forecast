@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Montserrat Alternates', sans-serif;
+
+  header.top {
+    background-color: #2F2F2F;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    .content {
+      display: flex;
+      width: 1200px;
+      padding: 2px 20px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 24px;
+
+      & strong {
+        color: orange;
+      }
+    }
+  }
+
+  section.main {
+    margin-top: 20px;
+
+    .forecast-container {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      margin: 48px auto;
+    }
+
+    .range {
+      background-color: #052BB5;
+      border-radius: 4px;
+      padding: 4px 8px;
+    }
+
+    .q-a {
+      text-align: left;
+      width: 600px;
+      margin: 72px 0;
+
+      h2 {
+        font-size: 22px;  
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-top: 2px solid #636363;
+        padding-top: 20px;
+      }
+
+      p {
+        margin-top: 8px;
+        line-height: 32px;
+      }
+    }
+  }
+}

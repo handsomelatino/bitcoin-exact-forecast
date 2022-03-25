@@ -1,0 +1,107 @@
+.__forecast-chart {
+  margin: 40px auto 80px;
+  width: 800px;
+  height: 280px;
+  display: flex;
+  gap: 8px;
+
+  .y-axis {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    margin-top: -8px;
+    margin-bottom: -8px;
+
+    .y-label {
+      &.positive {
+        color: #2EB444;
+      }
+
+      &.negative {
+        color: #CD3535;
+      }
+    }
+  }
+
+  .chart {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    position: relative;
+    flex: 1;
+
+    &:hover {
+      .vertical-line {
+        visibility: visible;
+      }
+    }
+
+    .line {
+      position: absolute;
+      width: 100%;
+      border-top: 1px solid gray;
+
+      &.btc {
+        border-top: 2px dashed orange;
+        height: 80px;
+        background: linear-gradient(to bottom, rgba(orange, 0.15), transparent);
+      }
+    }
+
+    .line-btc-previous {
+      position: absolute;
+      left: 0;
+      border-top: 2px solid orange;
+      top: 50%;
+      height: 1px;
+      width: 50%;
+    }
+
+    .vertical-line {
+      position: absolute;
+      height: 100%;
+      border-right: 1px dotted gray;
+      visibility: hidden;
+
+      .dot {
+        position: absolute;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: orange;
+        border-radius: 100%;
+        transform: translate(-50%, -50%);
+        margin-top: 1px;
+        margin-left: 1px;
+      }
+
+      .hover-value {
+        position: absolute;
+        width: 56px;
+        text-align: center;
+        background-color: #424242;
+        transform: translateX(-50%);
+        top: 4px;
+        border-radius: 4px;
+        padding: 2px;
+      }
+    }
+
+    .x-axis {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      .label {
+        .x-axis-line {
+          border-right: 1px solid white;
+          height: 8px;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
