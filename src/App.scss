@@ -2,13 +2,14 @@
   text-align: center;
   color: white;
   min-height: 100vh;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
   header.top {
     background-color: #2F2F2F;
     position: sticky;
     top: 0;
     z-index: 100;
+    font-family: 'Montserrat Alternates', sans-serif;
     
     .content {
       display: flex;
@@ -30,6 +31,7 @@
     margin-top: 20px;
 
     .forecast-container {
+      font-family: 'Montserrat Alternates', sans-serif;
       width: 800px;
       margin: 0 auto;
     }
@@ -48,25 +50,43 @@
 
     .q-a {
       text-align: left;
-      width: 600px;
-      margin: 72px 0;
+      width: 720px;
+      margin: 72px auto;
 
       h2 {
-        font-size: 22px;  
+        font-size: 26px;  
       }
 
       h3 {
-        font-size: 18px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-top: 2px solid #636363;
+        font-size: 24px;
+        margin-top: 36px;
+        margin-bottom: 24px;
+        border-top: 1px dashed #636363;
         padding-top: 20px;
       }
 
       p {
+        font-size: 18px;
         margin-top: 8px;
         line-height: 32px;
+        color: rgb(223, 223, 223);
       }
+
+      .note {
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 8px;
+      }
+
+      .highlighted {
+        background-color: rgba(white, 0.1);
+        transition-delay: 1s;
+        transition: 0.3s all;
+      }  
+    }
+
+    a {
+      color: rgb(82, 137, 255);
     }
   }
 }
