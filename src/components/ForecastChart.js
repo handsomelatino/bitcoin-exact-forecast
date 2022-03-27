@@ -8,6 +8,10 @@ const BTC_PRICE = [
   1000000, 1000, 100, 1, -100, -1000, -1000000
 ];
 
+const ABREVIATED_BTC_PRICE = [
+  '1M', '1K', '100', 1, '-100', '-1K', '-1M'
+];
+
 const DATES = [
   DateTime.now().minus({ years: 10 }),
   DateTime.now().minus({ years: 5 }),
@@ -43,7 +47,10 @@ export default function ForecastChart() {
     <div className='__forecast-chart'>
       <div className='y-axis'>
         { BTC_PRICE.map((price, index) => (
-          <div className={classNames('y-label', { positive: price > 1, negative: price < -1 })} style={{ top: `${index/BTC_PRICE.length * 100}%` }} key={price}>{ price.toLocaleString() } BTC</div>
+          <>
+            <div className={classNames('y-label desktop', { positive: price > 1, negative: price < -1 })} style={{ top: `${index/BTC_PRICE.length * 100}%` }} key={price}>{ price.toLocaleString() } BTC</div>
+            <div className={classNames('y-label mobile', { positive: price > 1, negative: price < -1 })} style={{ top: `${index/BTC_PRICE.length * 100}%` }} key={price}>{ ABREVIATED_BTC_PRICE[index] } { price === 1 ? 'BTC' : '' }</div>
+          </>
         ))}
       </div>
 
@@ -57,7 +64,7 @@ export default function ForecastChart() {
         <div className='vertical-line' style={{ left: verticalPosition }}><div className='dot' /><div className='hover-value'>1 BTC</div></div>
         
         <div className='x-axis'>
-          { DATES.map(date => <div className='label'><div className='x-axis-line' /><div>{ date.year }</div></div>)}
+          { DATES.map((date, index) => <div className={classNames('label', { 'mobile-hidden': index % 2 && date.year !== DateTime.now().year })}><div className='x-axis-line' /><div>{ date.year }</div></div>)}
         </div>
       </div>
 

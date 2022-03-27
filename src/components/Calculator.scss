@@ -1,3 +1,5 @@
+@import '../assets/include-media';
+
 .__calculator {
   display: flex;
   gap: 20px;
@@ -25,18 +27,21 @@
       font-size: 22px;
       font-weight: bold;
       width: 88px;
-      // width: 140px;
       padding: 0 8px;
 
       &:focus {
         outline: none;
+      }
+
+      @include media("<=414px") {
+        font-size: 18px;
+        max-width: 60px;
       }
     }
 
     .currency {
       background-color: #323232;
       border-radius: 4px;
-      // padding: 8px 4px 8px 8px;
       padding: 4px 8px;
       text-align: center;
       border: none;
@@ -44,6 +49,10 @@
       font-family: 'Montserrat Alternates', sans-serif;
       color: white;
       font-weight: bold;
+
+      @include media("<=414px") {
+        font-size: 18px;
+      }    
     }
   }
 }

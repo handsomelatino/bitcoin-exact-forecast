@@ -1,6 +1,9 @@
+@import '../assets/include-media';
+
 .__forecast-chart {
   margin: 40px auto 80px;
   width: 800px;
+  max-width: 100%;
   height: 280px;
   display: flex;
   gap: 8px;
@@ -14,7 +17,27 @@
     margin-top: -8px;
     margin-bottom: -8px;
 
+    @include media("<=414px") {
+      width: 13%;
+      font-size: 18px;
+    }
+    
     .y-label {
+
+      &.desktop {
+        @include media("<=414px") {
+          display: none;
+        }
+      }
+
+      &.mobile {
+        font-size: 14px;
+
+        @include media(">414px") {
+          display: none;
+        }
+      }
+
       &.positive {
         color: #2EB444;
       }
@@ -96,6 +119,12 @@
       justify-content: space-around;
 
       .label {
+        &.mobile-hidden {
+          @include media("<=414px") {
+            display: none;
+          }
+        }
+        
         .x-axis-line {
           border-right: 1px solid white;
           height: 8px;

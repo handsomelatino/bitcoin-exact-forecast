@@ -1,3 +1,5 @@
+@import 'assets/include-media';
+
 .App {
   text-align: center;
   color: white;
@@ -16,6 +18,10 @@
       width: 1200px;
       padding: 2px 20px;
       margin: 0 auto;
+      
+      @include media("<=1200px") {
+        width: unset;
+      }
     }
 
     h1 {
@@ -33,6 +39,7 @@
     .forecast-container {
       font-family: 'Montserrat Alternates', sans-serif;
       width: 800px;
+      max-width: 95%;
       margin: 0 auto;
     }
 
@@ -50,6 +57,7 @@
 
     .q-a {
       text-align: left;
+      max-width: 95%;
       width: 720px;
       margin: 72px auto;
 
@@ -63,6 +71,7 @@
         margin-bottom: 24px;
         border-top: 1px dashed #636363;
         padding-top: 20px;
+        line-height: 36px;
       }
 
       p {
