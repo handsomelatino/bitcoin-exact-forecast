@@ -1,3 +1,5 @@
+@import '../assets/include-media';
+
 .__twitter-share {
   position: fixed;
   bottom: 20px;
@@ -6,6 +8,12 @@
   font-family: 'Montserrat Alternates', sans-serif;
   align-items: center;
   transition: 0.3s;
+
+  @include media("<=414px") {
+    background-color: rgba(#5a5a5a, 0.6);
+    padding: 8px;
+    border-radius: 8px;
+  }
 
   &:hover {
     transform: translateY(-3px);
@@ -16,10 +24,6 @@
 
     .arrow {
       border-left-color: #5a5a5a;
-    }
-
-    > svg {
-      // transform: scale(1.1);
     }
   }
 
