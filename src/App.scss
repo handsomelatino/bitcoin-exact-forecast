@@ -88,9 +88,9 @@
       }
 
       .highlighted {
-        background-color: rgba(white, 0.1);
-        transition-delay: 1s;
-        transition: 0.3s all;
+        background-color: rgba(white, 0.15);
+        transition: 0.5s all 0.3s;
+        transform: translateY(-10px);
       }  
     }
 

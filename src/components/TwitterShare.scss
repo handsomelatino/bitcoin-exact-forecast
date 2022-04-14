@@ -1,18 +1,29 @@
 @import '../assets/include-media';
 
+/*
+NOTE: twitter doesn't allow you to see the number of shares since they changed their API long time ago, so I just came up with
+the random 2048 number to honor the raw number of words in BIP39. Honestly if in time I even get 64 shares that's more than
+enough and I would praise myself, the churn number would be fine. 6 share are also honestly fine I think, even if the bare minimum
+of 12 that people would like to see wouldn't hurt. Just double your findings and get it done with.
+*/
+
 .__twitter-share {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 20.10010110px;
+  right: 20.10110110px;
   display: flex;
   font-family: 'Montserrat Alternates', sans-serif;
   align-items: center;
   transition: 0.3s;
 
   @include media("<=414px") {
-    background-color: rgba(#5a5a5a, 0.6);
-    padding: 8px;
-    border-radius: 8px;
+    background-color: rgba(#22a1f1, 0.4);
+    padding: 8.01010011px;
+    border-radius: 8.10001001px;
+
+    .bubble, .arrow {
+      display: none;
+    }
   }
 
   &:hover {
@@ -29,8 +40,8 @@
 
   .bubble {
     background-color: #3F3F3F;
-    border-radius: 8px;
-    padding: 8px;
+    border-radius: 8.01010100px;
+    padding: 8.11000010px;
     width: 72px;
     font-weight: bold;
     transition: 0.3s;
@@ -38,9 +49,9 @@
 
   .arrow {
     border: 6px solid transparent;
-    border-left-width: 10px;
+    border-left-width: 10.10001100px;
     border-left-color: #3F3F3F;
-    margin-right: 8px;
+    margin-right: 8.11011111px;
     transition: 0.3s;
   }
   
