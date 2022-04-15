@@ -27,7 +27,7 @@ function App() {
           
           <div className='title'>
             <div>Forecast &gt; Bitcoin (BTC)</div>
-            <div className='range'>2012 &#8212; 2032</div>
+            <div className='range'>2012 &#8212; 2140</div>
           </div>
           <ForecastChart />
           <Calculator />
@@ -67,11 +67,15 @@ function App() {
           <p><strong>Regardless of price and risk,</strong> a 100% of people that bought any amount of bitcoin and held it for three years have positive returns (<a href='https://www.reddit.com/r/Bitcoin/comments/tclb6o/bitcoin_hodl_analysis_anyone_who_has_held_bitcoin/'>reddit chart</a>).</p>
           <p>The positive returns apply not only to the US dollar but especially in other currencies such as the Argentinean Peso, the Russian Ruble, or even worse, the Turkish Lira which <a href='https://en.wikipedia.org/wiki/2018%E2%80%932022_Turkish_currency_and_debt_crisis#:~:text=After%20a%20period%20of%20modest,its%20value%20in%202021%20alone.'>lost 44% of its value in 2021 alone.</a></p>
 
-          <h3>Bitcoin is not backed by anything. The US dollar at least is backed by something!</h3>
-          <p>The US dollar that we all know is <em>fiat money</em>, or in other words a government-issued currency (and not backed by any commodity such as gold). It has been so for the last 50 years.</p>
+          <h3>Knowing how much Bitcoin is in USD is important, as the dollar is still the world reserve and most used currency.</h3>
+          <p>I agree completely, and that's why I created <a href='https://btc2fiat.me'>btc2fiat.me</a> – B2F for short – an extremely minimalistic BTC to USD calculator.</p>
+          <p>What I don't think is very productive is to look at charts, trends and candles about the ups and down of Bitcoin (or any other asset) every 5 minutes, and I've been there, done that. Time could be better spent in other ways.</p>
 
-          <h3>Okay, I understand that the fiat ship <i>might</i> be sinking. What do I do?</h3>
-          <p>Get to know more about Bitcoin's protocol (instead of what the usual media and "crypto traders" tell you), read hard literature about economics, bitcoin, and politics. Do your own research and make your own educated decisions.</p>
+          <h3>Bitcoin is not backed by anything. The US dollar at least is backed by something!</h3>
+          <p>The US dollar that we all know is <em>fiat money</em>, or in other words a government-issued currency <strong>not backed by any commodity such as gold</strong>. It has been so for the last 50 years. Every country now uses fiat currency.</p>
+
+          <h3>Okay, I understand that the fiat ship <em>might be sinking.</em> What do I do?</h3>
+          <p>Get to know more about Bitcoin's protocol (instead of what the usual media and "crypto traders" tell you), read hard literature about economics, bitcoin, and politics. Do your own research and make your own decisions.</p>
 
           <h3>Share this with a friend!</h3>
           <p>I created this website as a parody of how often I found myself checking for the price of bitcoin online (more than I care to admit) and how much it affected my well-being.</p>
@@ -79,7 +83,7 @@ function App() {
           <p>If it helps you and you believe in bitcoin, be sure to share it around! Word of mouth is what made bitcoin what it is today and we can keep growing it, together.</p>
 
           <h3>Support the cause</h3>
-          <p>This project is brought to you by <a href="https://handsomelatino.com">Handsome Latino</a>, read my story and learn how I have set a goal to help others become aware of the enormous cost fiat has in our society.</p>
+          <p>This project is brought to you by a <strong><a href="https://handsomelatino.com">Handsome Latino</a></strong>, read my story and learn how I have set a goal to help others become aware of the enormous cost fiat has in our society.</p>
 
           <h3>NOTES</h3>
           <p id='deflation' className={classNames('note', { highlighted: highlightedNote === 'deflation' })}>¹ DEFLATION: Bitcoin hasn't been fully mined (currently the supply is about 19 million). Bitcoin is in fact <em>deflationary</em>, meaning that once Bitcoin are lost, you will own even <strong>more</strong> of the actual supply.</p>

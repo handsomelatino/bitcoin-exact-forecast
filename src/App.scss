@@ -95,7 +95,11 @@
     }
 
     a {
-      color: rgb(82, 137, 255);
+      color: #5289ff;
+
+      &:hover {
+        color: #84abfd;
+      }
     }
   }
 }
