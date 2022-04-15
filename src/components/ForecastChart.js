@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { DateTime } from "luxon";
-import { useState } from "react";
+import React, { useState } from "react";
 
 import './ForecastChart.scss';
 
@@ -26,15 +26,6 @@ export default function ForecastChart() {
 
   const [verticalPosition, setVerticalPosition] = useState(null);
 
-  // const dates = useMemo(() => {
-  //   const now = DateTime.now();
-
-  //   return [
-  //     now,
-  //     now.plus({ months: 1 })
-  //   ]
-  // }, []);
-
   const onMouseMoveChart = e => {
     const rect = e.currentTarget.getBoundingClientRect();
 
@@ -47,16 +38,16 @@ export default function ForecastChart() {
     <div className='__forecast-chart'>
       <div className='y-axis'>
         { BTC_PRICE.map((price, index) => (
-          <>
-            <div className={classNames('y-label desktop', { positive: price > 1, negative: price < -1 })} style={{ top: `${index/BTC_PRICE.length * 100}%` }} key={price}>{ price.toLocaleString() } BTC</div>
-            <div className={classNames('y-label mobile', { positive: price > 1, negative: price < -1 })} style={{ top: `${index/BTC_PRICE.length * 100}%` }} key={price}>{ ABREVIATED_BTC_PRICE[index] } { price === 1 ? 'BTC' : '' }</div>
-          </>
+          <React.Fragment key={price}>
+            <div className={classNames('y-label desktop', { positive: price > 1, negative: price < -1 })} style={{ top: `${index/BTC_PRICE.length * 100}%` }}>{ price.toLocaleString() } BTC</div>
+            <div className={classNames('y-label mobile', { positive: price > 1, negative: price < -1 })} style={{ top: `${index/BTC_PRICE.length * 100}%` }}>{ ABREVIATED_BTC_PRICE[index] } { price === 1 ? 'BTC' : '' }</div>
+          </React.Fragment>
         ))}
       </div>
 
       <div className='chart' onMouseMove={onMouseMoveChart}>
         { BTC_PRICE.slice(0, BTC_PRICE.length - 1).map((price, index) => (
-          <div className={classNames("line", { btc: price === 1})} style={{ top: `${index/(BTC_PRICE.length - 1) * 100}%`}} />
+          <div key={price} className={classNames("line", { btc: price === 1})} style={{ top: `${index/(BTC_PRICE.length - 1) * 100}%`}} />
         ))}
 
         <div className='line-btc-previous' />
@@ -64,7 +55,7 @@ export default function ForecastChart() {
         <div className='vertical-line' style={{ left: verticalPosition }}><div className='dot' /><div className='hover-value'>1 BTC</div></div>
         
         <div className='x-axis'>
-          { DATES.map((date, index) => <div className={classNames('label', { 'mobile-hidden': index % 2 && date.year !== DateTime.now().year })}><div className='x-axis-line' /><div>{ date.year }</div></div>)}
+          { DATES.map((date, index) => <div key={date} className={classNames('label', { 'mobile-hidden': index % 2 && date.year !== DateTime.now().year })}><div className='x-axis-line' /><div>{ date.year }</div></div>)}
         </div>
       </div>
 

@@ -1,10 +1,12 @@
 import classNames from 'classnames';
 import { useState } from 'react';
 import { TwitterShareButton } from 'react-share';
-import './App.scss';
+
 import Calculator from './components/Calculator';
 import ForecastChart from './components/ForecastChart';
 import TwitterShare from './components/TwitterShare';
+
+import './App.scss';
 
 function App() {
 
