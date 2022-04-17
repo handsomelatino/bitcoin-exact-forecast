@@ -68,6 +68,7 @@ function App() {
           <p>If you look at the big picture instead of the day-to-day price of bitcoin, the results are clear: </p>
           <p><strong>Regardless of price and risk,</strong> a 100% of people that bought any amount of bitcoin and held it for three years have positive returns (<a href='https://www.reddit.com/r/Bitcoin/comments/tclb6o/bitcoin_hodl_analysis_anyone_who_has_held_bitcoin/'>reddit chart</a>).</p>
           <p>The positive returns apply not only to the US dollar but especially in other currencies such as the Argentinean Peso, the Russian Ruble, or even worse, the Turkish Lira which <a href='https://en.wikipedia.org/wiki/2018%E2%80%932022_Turkish_currency_and_debt_crisis#:~:text=After%20a%20period%20of%20modest,its%20value%20in%202021%20alone.'>lost 44% of its value in 2021 alone.</a></p>
+          <p>As of 2022, Turkey is the 27th country by exports, right below Brazil and bigger than New Zealand, Austria, or Denmark.</p>
 
           <h3>Knowing how much Bitcoin is in USD is important, as the dollar is still the world reserve and most used currency.</h3>
           <p>I agree completely, and that's why I created <a href='https://btc2fiat.me'>btc2fiat.me</a> – B2F for short – an extremely minimalistic BTC to USD calculator.</p>
@@ -92,7 +93,7 @@ function App() {
         </div>
       </section>
 
-      <TwitterShareButton title="Bitcoin's exact forecast for the next 5 years #bitcoinexactforecast" url='https://bitcoinexactforecast.com' via='handsome_latino'>
+      <TwitterShareButton title="Exact forecast of #Bitcoin ₿ for the next 5 years:" url='https://bitcoinexactforecast.com' via='handsome_latino'>
         <TwitterShare />
       </TwitterShareButton>
     </div>
