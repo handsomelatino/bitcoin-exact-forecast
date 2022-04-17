@@ -93,7 +93,7 @@ function App() {
         </div>
       </section>
 
-      <TwitterShareButton title="Exact forecast of #Bitcoin ₿ for the next 5 years:" url='https://bitcoinexactforecast.com' via='handsome_latino'>
+      <TwitterShareButton title="Exact forecast of #Bitcoin for the next 5 years:" url='https://bitcoinexactforecast.com' via='handsome_latino'>
         <TwitterShare />
       </TwitterShareButton>
     </div>
