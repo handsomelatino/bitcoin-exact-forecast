@@ -2,7 +2,7 @@
 
 A parody of our daily... or hourly addiction to checking Bitcoin price against fiat currencies.
 
-![donate to this project's bounty here: bc1qjefrev2eza20vjvw9g0htwwmspdky3glq23c7r](https://user-images.githubusercontent.com/100208905/163549455-daa2f059-8888-4189-9b62-37a545b92d73.png)
+![bc1qjefrev2eza20vjvw9g0htwwmspdky3glq23c7r](https://user-images.githubusercontent.com/100208905/163549455-daa2f059-8888-4189-9b62-37a545b92d73.png)
 
 Created by a [Handsome Latino](https://handsomelatino.com) using [React](https://github.com/facebook/create-react-app).
 ## To run locally

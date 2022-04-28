@@ -52,21 +52,21 @@ function App() {
           <h3>This is stupid. $1 USD = $1 USD. 1 Eur = 1 Eur. Right?</h3>
           <p>Yes, you are correct... unless you add a time frame to that calculation.</p>
           <p>Say you owned a $1 bill in 1980. Adjusted for an annual inflation rate of 3.12%, that dollar would only be worth 28 cents now.</p>
-          <p>1980 sounds like a long time ago? Let's just take into account the official figure of inflation for the last two years (2019 to 2021): about 10%.</p>
+          <p>1980 sounds like a long time ago? Let's just take into account the aggregate official inflation for the last two years (2019 to 2021): about 10%.</p>
           <p>For 2022, inflation is forecasted to be 8%.</p>
           <p>That means that if you used your time, energy, and sacrifice to save $50,000 in the bank for emergencies or a big investment, suddenly $5,000 vanished from your account in two years.</p>
 
           <h3>But Inflation Is Good™</h3>
           <p>You can do your own research and get your own perspective about inflation. No matter how you see it though, experts and citizens alike will always agree that hyperinflation is a <em>not</em> good thing.</p>
           <p>The reported 10% is only the tip of the iceberg as it is based on goods and services. When you take into account other sectors, matters get worse:</p>
-          <p>House pricing in the US is up almost 20% in the last 12 months in the US (<a rel='nofollow' href='https://www.whitehouse.gov/cea/written-materials/2021/09/09/housing-prices-and-inflation/'>whitehouse.gov</a>).</p>
+          <p>House pricing in the United States is up almost 20% in the last 12 months (<a rel='nofollow' href='https://www.whitehouse.gov/cea/written-materials/2021/09/09/housing-prices-and-inflation/'>whitehouse.gov</a>).</p>
           <p>Education is up by more than 100% since the year 2000 (<a rel='nofollow' href='https://educationdata.org/average-cost-of-college-by-year'>educationdata.org</a>). If you have young children right now, you can safely expect to pay at least twice as much for tuition when they are ready for an academic degree.</p>
           <p>As a citizen of three different countries all in different continents I can safely attest that this model is not unique to the United States.</p>
           
           <h3>Bitcoin is super risky! The price is so volatile.</h3>
-          <p>Bitcoin might <em>look</em> risky, but once you leverage the risk of the current inflation happening worldwide, bitcoin might be one of the only choices for the average person.</p>
+          <p>Bitcoin might <em>look</em> risky, but once you leverage the risk of the current inflation happening worldwide, bitcoin might be one of the only choices to hedge against inflation for the average person or the unbanked.</p>
           <p>If you look at the big picture instead of the day-to-day price of bitcoin, the results are clear: </p>
-          <p><strong>Regardless of price and risk,</strong> a 100% of people that bought any amount of bitcoin and held it for three years have positive returns (<a href='https://www.reddit.com/r/Bitcoin/comments/tclb6o/bitcoin_hodl_analysis_anyone_who_has_held_bitcoin/'>reddit chart</a>).</p>
+          <p><strong>Regardless of price and risk,</strong> 100% of people that bought any amount of bitcoin and held it for three years have positive returns (<a href='https://www.reddit.com/r/Bitcoin/comments/tclb6o/bitcoin_hodl_analysis_anyone_who_has_held_bitcoin/'>reddit chart</a>).</p>
           <p>The positive returns apply not only to the US dollar but especially in other currencies such as the Argentinean Peso, the Russian Ruble, or even worse, the Turkish Lira which <a href='https://en.wikipedia.org/wiki/2018%E2%80%932022_Turkish_currency_and_debt_crisis#:~:text=After%20a%20period%20of%20modest,its%20value%20in%202021%20alone.'>lost 44% of its value in 2021 alone.</a></p>
           <p>As of 2022, Turkey is the 27th country by exports, right below Brazil and bigger than New Zealand, Austria, or Denmark.</p>
 
@@ -78,7 +78,7 @@ function App() {
           <p>The US dollar that we all know is <em>fiat money</em>, or in other words a government-issued currency <strong>not backed by any commodity such as gold</strong>. It has been so for the last 50 years. Every country now uses fiat currency.</p>
 
           <h3>Okay, I understand that the fiat ship <em>might be sinking.</em> What do I do?</h3>
-          <p>Get to know more about Bitcoin's protocol (instead of what the usual media and "crypto traders" tell you), read hard literature about economics, bitcoin, and politics. Do your own research and make your own decisions.</p>
+          <p>Get to know more about Bitcoin's protocol (instead of what the usual media or traders tell you), read hard literature about economics, bitcoin, and politics. Do your own research and make your own decisions.</p>
 
           <h3>Share this with a friend!</h3>
           <p>I created this website as a parody of how often I found myself checking for the price of bitcoin online (more than I care to admit) and how much it affected my well-being.</p>
@@ -87,6 +87,11 @@ function App() {
 
           <h3>Support the cause</h3>
           <p>This project is brought to you by a <strong><a href="https://handsomelatino.com">Handsome Latino</a></strong>, read my story and learn how I have set a goal to help others become aware of the enormous cost fiat has in our society.</p>
+          <p class="center"><a class="donate-button" href="https://pay.handsomelatino.com/api/v1/invoices?storeId=3zecRWVXGTMtpsE4157U8hjzL9iwBfPFBroABh3oWD3r&currency=USD" target="_blank" rel="noreferrer">Donate and Support</a></p>
+
+          <h3>Corrections or suggestions? Feedback is welcome!</h3>
+          <p>Let me know through the <a href="https://github.com/handsomelatino/bitcoin-exact-forecast">Github repository</a>.</p>
+
 
           <h3>NOTES</h3>
           <p id='deflation' className={classNames('note', { highlighted: highlightedNote === 'deflation' })}>¹ DEFLATION: Bitcoin hasn't been fully mined (currently the supply is about 19 million). Bitcoin is in fact <em>deflationary</em>, meaning that once Bitcoin are lost, you will own even <strong>more</strong> of the actual supply.</p>
