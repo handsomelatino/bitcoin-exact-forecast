@@ -127,6 +127,30 @@
       }
     }
 
+    .view-qr-code {
+      display: inline;
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: bold;
+      color: #5289ff;
+      cursor: pointer;
+
+      &:hover {
+        color: #84abfd;
+        text-decoration: underline;
+      }
+    }
+
+    .qr-code-container {
+      padding: 10px;
+      background-color: white;
+      border-radius: 4px;
+      display: inline-block;
+
+      > svg {
+        display: block;
+      }
+    }
   }
 
   .not-your-keys-not-your-coins {

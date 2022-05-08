@@ -5,12 +5,14 @@ import { TwitterShareButton } from 'react-share';
 import Calculator from './components/Calculator';
 import ForecastChart from './components/ForecastChart';
 import TwitterShare from './components/TwitterShare';
+import LightningQRCode from './assets/LightningQRCode';
 
 import './App.scss';
 
 function App() {
 
   const [highlightedNote, setHighlightedNote] = useState(null);
+  const [viewQRCode, setViewQRCode] = useState(false);
 
   const onClickDeflation = () => {
     setHighlightedNote('deflation');
@@ -98,7 +100,14 @@ function App() {
 
           <h3>Support the cause</h3>
           <p>This project is brought to you by a <strong><a href="https://handsomelatino.com">Handsome Latino</a></strong>, read my story and learn how I have set a goal to help others become aware of the enormous cost fiat has in our society.</p>
-          <p class="center"><a class="donate-button" href="https://pay.handsomelatino.com/api/v1/invoices?storeId=3zecRWVXGTMtpsE4157U8hjzL9iwBfPFBroABh3oWD3r&currency=USD" target="_blank" rel="noreferrer">Donate and Support</a></p>
+          <p className="center"><a className="donate-button" href="https://pay.handsomelatino.com/api/v1/invoices?storeId=3zecRWVXGTMtpsE4157U8hjzL9iwBfPFBroABh3oWD3r&currency=USD" target="_blank" rel="noreferrer">Donate and Support</a></p>
+          <p>Tipping with Lightning? Use Lightning Address: <code>handsome_latino@stacker.news</code></p>
+          <p className='center'>
+            <a className='donate-button' href='lightning:lnurl1dp68gurn8ghj7um5v93kketj9ehx2amn9uh8wetvdskkkmn0wahz7mrww4excup0dpskuerndakk2hmvv96xjmn02f3vg9'>⚡️ handsome_latino@stacker.news</a>
+            <div><div className='view-qr-code' role='button' onClick={() => setViewQRCode(!viewQRCode)}>{ viewQRCode ? 'Hide' : 'View' } QR Code</div></div>
+
+            <div className='qr-code-container' style={{ display: viewQRCode ? undefined : 'none' }}><LightningQRCode /></div>
+          </p>
 
           <h3>Comments, suggestions or corrections? Feedback is welcome!</h3>
           <p>Let me know through the <a href="https://github.com/handsomelatino/bitcoin-exact-forecast">Github repository</a>. Translations are also welcome.</p>
