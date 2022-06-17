@@ -49,7 +49,7 @@ function App() {
 
           <h3>What do you mean by 1 BTC = 1 BTC. Is this a cheap prank?</h3>
           <p>It is kind of a prank, but the main idea here is that there is a <strong>fixed maximum supply of 21 million bitcoin,</strong> meaning that if you own 1 bitcoin now, you will always own (at least) 1 / 21 millionth of all bitcoin in existence <a href="#deflation" onClick={onClickDeflation}>or more¹</a>.</p>
-          <p>That's approximately 0.000000048% of the supply. It sounds like an incredibly small number, but once you realize there are almost 8 billion (~7,900,000,000) of us in the planet, this means that <strong>less than 0.2 percent of the population can <u>ever</u> own more than 1 bitcoin.</strong></p>
+          <p>That's approximately 0.00000476% of the supply. It sounds like an incredibly small number, but once you realize there are almost 8 billion (~7,900,000,000) of us in the planet, this means that <strong>less than 0.2 percent of the population can <u>ever</u> own more than 1 bitcoin.</strong></p>
           <p>Considering the potential that bitcoin has, there is a very high chance its value will continue growing (keep reading to know why).</p>
 
           <h3>This is stupid. $1 USD = $1 USD. 1 Eur = 1 Eur. Right?</h3>
